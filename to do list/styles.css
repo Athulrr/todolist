@@ -1,0 +1,119 @@
+body {
+  font-family: 'courier', cursive;
+  background-image: url('Desktop - 2.jpg');
+  background-color: #7e7c7c;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: rgb(122, 84, 35);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgb(51, 139, 95);
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#new-task-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  font-family: 'courier', cursive;
+}
+
+#add-task-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fd6017;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-left: 10px;
+  font-family: 'courier', cursive;
+}
+
+#add-task-button:hover {
+  background-color: #ff8c00;
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+}
+
+.task-item button {
+  margin-left: 10px;
+  font-family: 'courier', cursive;
+}
+
+.edit-button, .delete-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+#datetime {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#day {
+  font-family: 'Courier', monospace;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+#date {
+  font-family: 'Courier', monospace;
+  font-size: 1em;
+  color: rgb(15, 15, 15);
+}
+.signature {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  position: fixed;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: #fffbfb;
+}
